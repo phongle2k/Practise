@@ -1,0 +1,91 @@
+<!-- Bài tập form và table kết hợp -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bài tập tổng hợp Table + Form</title>
+
+    <style>
+        table, tr, th, td {
+            border: 1px solid black;
+        }
+        table {
+            border-collapse: collapse;
+        }
+    </style>
+</head>
+<body>
+    <form>
+        <table>
+            <thead>
+                <tr>
+                    <th colspan="2">Đăng ký</th>
+                </tr>
+                <tr>
+                    <td>Full name</td>
+                    <td><input type="text" placeholder="Nhập Full name"></td>
+                </tr>
+                <tr>
+                    <td>Username</td>
+                    <td><input type="text" placeholder="Nhập username"></td>
+                </tr>
+                <tr>
+                    <td>Password</td>
+                    <td><input type="password" placeholder="Nhập password"></td>
+                </tr>
+                <tr>
+                    <td>Nhập lại password</td>
+                    <td><input type="password" placeholder="Nhập lại password"></td>
+                </tr>
+                <tr>
+                    <td>Giới tính</td>
+                    <td>
+                        <input type="radio" name="Gender" id="Male">
+                        <label for="Male">Nam</label>
+                        <input type="radio" name="Gender" id="feMale">
+                        <label for="feMale">Nữ</label>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Ngày sinh</td>
+                    <td><input type="date" name="txtDate" id="txtDate" min="1900-01-01"></td>
+                </tr>
+                <tr>
+                    <td>Chọn tháng</td>
+                    <td><input type="month" name="txtMonth" id="txtMonth"></td>
+                </tr>
+                <tr>
+                    <td>Chọn tuần</td>
+                    <td><input type="week" name="txtWeek" id="txtWeek"></td>
+                </tr>
+                <tr>
+                    <td>Địa chỉ</td>
+                    <td><textarea></textarea></td>
+                </tr>
+                <tr>
+                    <td>Avatar</td> 
+                    <td><input type="file"></td>
+                </tr>
+                <tr>
+                    <td>Sở thích</td>
+                    <td>
+                        <input type="checkbox" id="xemphim">
+                        <label for="xemphim">Xem Phim</label>
+                        <input type="checkbox" id="thethao">
+                        <label for="thethao">Thể Thao</label>
+                        <input type="checkbox" id="web">
+                        <label for="web">Web</label>
+                    </td>
+                </tr>
+                <tr>
+                    <th colspan="2" style="text-align: center;">
+                        <button name="reset">Reset</button>
+                        <button name="ok">OK</button>
+                    </th>
+                </tr>
+            </thead>
+        </table>
+    </form>
+</body>
+</html>

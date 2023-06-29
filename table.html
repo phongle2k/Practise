@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Table in HTML</title>
+
+    <style>
+        table, tr, th, td {
+            border: 1px solid black;
+        }
+
+        table {
+            border-collapse: collapse; /* Bỏ khoảng trống giữa các đường viền */
+        }
+    </style>
+</head>
+<body>
+    <table>
+        <thead>
+            <tr>
+                <th>No</th>
+                <th>Full Name</th>
+                <th>Position</th>
+                <th>Salary</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td>Nguyễn Văn A</td>
+                <td>Nhân viên</td>
+                <td>1000$</td>
+            </tr>
+
+            <!-- Gộp hàng ta dùng rowspan -->
+            <tr>
+                <td rowspan="2">2</td>
+                <td rowspan="2">Lê Hồng Phong</td>
+                <td>Giám đốc</td>
+                <td>5000$</td>
+            </tr>
+            <tr>
+                <td>Chủ tịch</td>
+                <td>10000$</td>
+            </tr>
+            <!-- Kết thúc gộp hàng -->
+
+            <tr>
+                <td>3</td>
+                <td>Lê Thị Thu Hiền</td>
+                <td>Phó giám đốc</td>
+                <td>3000$</td>
+            </tr>
+        </tbody>
+    </table>
+    <br>
+    <table>
+        <thead>
+            <!-- Gộp cột ta dùng colspan -->
+            <tr>
+                <th rowspan="2">No</th>
+                <th rowspan="2">Name</th>
+                <th colspan="2">Address</th>
+            </tr>
+            <tr>
+                <th>City</th>
+                <th>Country</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td>Lê Hồng Phong</td>
+                <td>Hà Nam</td>
+                <td>Việt Nam</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>Lê Hồng Phi</td>
+                <td>Hà Nam</td>
+                <td>Việt Nam</td>
+            </tr>
+        </tbody>
+    </table>
+    <br>
+    <!-- Bài tập -->
+    <table>
+        <thead>
+            <tr>
+                <th colspan="3">Danh sách ca sĩ</th>
+            </tr>
+            <tr>
+                <th>STT</th>
+                <th>Họ và tên</th>
+                <th>Email</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td rowspan="2">1</td>
+                <td rowspan="2">Quang Thọ</td>
+                <td>quangtho@gmail.com</td>
+            </tr>
+            <tr>
+                <td>quangtho@yahoo.com</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>
